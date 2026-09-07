@@ -651,3 +651,22 @@ footer p {
     position: relative;
     z-index: 2;
 }
+/* ANIMATED LOGO */
+
+.logo {
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.7);
+}
+
+.logo span {
+    display: inline-block;
+    transition: transform 0.4s ease;
+}
+
+.logo:hover span {
+    transform: rotate(-8deg) scale(1.1);
+}
