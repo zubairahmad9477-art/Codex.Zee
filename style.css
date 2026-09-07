@@ -617,3 +617,37 @@ to {
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(56, 189, 248, 0.25);
 }
+/* PREMIUM FOOTER */
+
+footer {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(56, 189, 248, 0.12);
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: rgba(56, 189, 248, 0.08);
+    filter: blur(70px);
+    left: -100px;
+    bottom: -150px;
+    pointer-events: none;
+}
+
+.footer-links a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+footer p {
+    position: relative;
+    z-index: 2;
+}
