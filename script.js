@@ -8,13 +8,14 @@ form.addEventListener("submit", function (event) {
     const message = document.getElementById("message").value.trim();
 
     const text =
-        "Hello CodeWithZee!%0A%0A" +
-        "Name: " + encodeURIComponent(name) + "%0A" +
-        "Email: " + encodeURIComponent(email) + "%0A" +
-        "Message: " + encodeURIComponent(message);
+        "Hello CodeWithZee!\n\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Message: " + message;
 
     const whatsappURL =
-        "https://wa.me/923018339477?text=" + text;
+        "https://wa.me/923018339477?text=" +
+        encodeURIComponent(text);
 
     window.location.href = whatsappURL;
 });
