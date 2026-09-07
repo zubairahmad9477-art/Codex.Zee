@@ -777,3 +777,33 @@ footer p {
         transform: scale(0.9);
     }
 }
+/* SCROLL INDICATOR */
+
+.scroll-indicator {
+    margin-top: 45px;
+    text-align: center;
+    animation: scrollFloat 2s ease-in-out infinite;
+}
+
+.scroll-indicator span {
+    display: block;
+    font-size: 13px;
+    color: #94a3b8;
+    letter-spacing: 1px;
+}
+
+.scroll-arrow {
+    font-size: 24px;
+    color: #38bdf8;
+    margin-top: 5px;
+}
+
+@keyframes scrollFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}
