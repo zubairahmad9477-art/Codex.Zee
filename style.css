@@ -752,3 +752,28 @@ footer p {
         font-size: 28px;
     }
 }
+/* SMOOTH MOBILE MENU */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .menu-toggle {
+        transition: transform 0.3s ease;
+    }
+
+    .menu-toggle:active {
+        transform: scale(0.9);
+    }
+}
