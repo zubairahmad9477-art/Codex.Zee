@@ -155,7 +155,147 @@
 
     </section>
 
+<section id="tutorials" class="section">
+    <p class="hero-tag">LEARN CODING</p>
 
+    <h2>Free Coding Tutorials</h2>
+
+    <p>
+        Learn HTML, CSS and JavaScript step by step with
+        simple beginner-friendly tutorials.
+    </p>
+
+    <div class="cards">
+
+        <article class="card">
+            <div class="project-icon">🌐</div>
+
+            <h3>HTML Basics</h3>
+
+            <p>
+                Learn the basics of HTML and create your
+                first web page.
+            </p>
+
+            <a href="#html-tutorial" class="hero-btn">
+                Start Learning
+            </a>
+        </article>
+
+        <article class="card">
+            <div class="project-icon">🎨</div>
+
+            <h3>CSS Basics</h3>
+
+            <p>
+                Learn how to style your website and make
+                it look modern and responsive.
+            </p>
+
+            <a href="#css-tutorial" class="hero-btn">
+                Start Learning
+            </a>
+        </article>
+
+        <article class="card">
+            <div class="project-icon">⚡</div>
+
+            <h3>JavaScript Basics</h3>
+
+            <p>
+                Learn JavaScript and add interactive
+                features to your website.
+            </p>
+
+            <a href="#js-tutorial" class="hero-btn">
+                Start Learning
+            </a>
+        </article>
+
+    </div>
+</section>
+  <section id="html-tutorial" class="section">
+    <section id="css-tutorial" class="section">
+    <p class="hero-tag">CSS BASICS</p>
+
+    <h2>Learn CSS From Zero</h2>
+
+    <p>
+        CSS is used to style HTML pages and make websites
+        attractive, responsive and easy to use.
+    </p>
+
+    <div class="card">
+        <h3>What is CSS?</h3>
+
+        <p>
+            CSS stands for Cascading Style Sheets.
+            It controls colors, fonts, spacing, layouts and
+            many other visual parts of a website.
+        </p>
+
+        <h3>Your First CSS</h3>
+
+        <pre><code>body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    line-height: 1.6;
+}</code></pre>
+
+        <h3>What You Learned</h3>
+
+        <p>
+            You learned how CSS can change the appearance
+            and layout of elements on an HTML page.
+        </p>
+    </div>
+    </section>
+    <p class="hero-tag">HTML BASICS</p>
+
+    <h2>Learn HTML From Zero</h2>
+
+    <p>
+        HTML is the basic language used to create the structure
+        of web pages.
+    </p>
+
+    <div class="card">
+        <h3>What is HTML?</h3>
+
+        <p>
+            HTML stands for HyperText Markup Language.
+            It is used to create headings, paragraphs, links,
+            images, buttons and other elements on a webpage.
+        </p>
+
+        <h3>Your First HTML Page</h3>
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Website&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;Welcome to my website.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h3>What You Learned</h3>
+
+        <p>
+            You learned the basic structure of an HTML page,
+            including the html, head, title and body elements.
+        </p>
+    </div>
+  </section>
     <!-- PROJECTS -->
     <section id="projects" class="section projects-section">
 
@@ -379,24 +519,23 @@
     class="contact-form"
     action="https://formspree.io/f/xoeqkjyp"
     method="POST">
+<label for="name">Your Name</label>
+<input
+    type="text"
+    id="name"
+    name="name"
+    placeholder="Enter your name"
+    autocomplete="name"
+    required>
 
-    <label for="name">Your Name</label>
-    <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Enter your name"
-        autocomplete="name"
-        required>
-
-    <label for="email">Your Email</label>
-    <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder "your email"
-        autocomplete="email"
-        required>
+<label for="email">Your Email</label>
+<input
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Enter your email"
+    autocomplete="email"
+    required>
 
     <label for="message">Your Message</label>
     <textarea
